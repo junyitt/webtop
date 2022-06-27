@@ -7,9 +7,11 @@ services:
       - PGID=1000
       - TZ=Asia/Singapore
     volumes:
-      - config:/config
+      - webtop_config:/config
     ports:
       - 3000:3000
     shm_size: "2gb"
     restart: unless-stopped
     
+  volumes:
+    webtop_config: {}
