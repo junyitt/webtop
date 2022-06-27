@@ -12,6 +12,7 @@ services:
       - 3000:3000
     shm_size: "2gb"
     restart: unless-stopped
+    # privileged: true
     
 volumes:
   webtop_config: {}
