@@ -13,5 +13,5 @@ services:
     shm_size: "2gb"
     restart: unless-stopped
     
-  volumes:
-    webtop_config: {}
+volumes:
+  webtop_config: {}
